@@ -1,0 +1,72 @@
+Variables in file: ./line.dat
+Elmer version: 8.4
+Elmer revision: Release
+Elmer compilation date: 2020-08-03
+Solver input file: case.sif
+File started at: 2020/10/01 10:26:07
+Number of data nodes for each step
+  bc nodes: 0
+  polyline nodes: 201
+  circle nodes: 0
+  isocurve nodes: 0
+Data on different columns
+  1: Iteration step
+  2: Boundary condition
+  3: Node index
+  4: coordinate 1
+  5: coordinate 2
+  6: coordinate 3
+  7: potential re
+  8: potential im
+  9: magnetic flux density re 1
+ 10: magnetic flux density re 2
+ 11: magnetic flux density re 3
+ 12: magnetic flux density im 1
+ 13: magnetic flux density im 2
+ 14: magnetic flux density im 3
+ 15: magnetic field strength re 1
+ 16: magnetic field strength re 2
+ 17: magnetic field strength re 3
+ 18: magnetic field strength im 1
+ 19: magnetic field strength im 2
+ 20: magnetic field strength im 3
+ 21: current density re 1
+ 22: current density re 2
+ 23: current density re 3
+ 24: current density im 1
+ 25: current density im 2
+ 26: current density im 3
+ 27: joule heating
+ 28: electric field re 1
+ 29: electric field re 2
+ 30: electric field re 3
+ 31: electric field im 1
+ 32: electric field im 2
+ 33: electric field im 3
+ 34: magnetic flux density re e 1
+ 35: magnetic flux density re e 2
+ 36: magnetic flux density re e 3
+ 37: magnetic flux density im e 1
+ 38: magnetic flux density im e 2
+ 39: magnetic flux density im e 3
+ 40: magnetic field strength re e 1
+ 41: magnetic field strength re e 2
+ 42: magnetic field strength re e 3
+ 43: magnetic field strength im e 1
+ 44: magnetic field strength im e 2
+ 45: magnetic field strength im e 3
+ 46: current density re e 1
+ 47: current density re e 2
+ 48: current density re e 3
+ 49: current density im e 1
+ 50: current density im e 2
+ 51: current density im e 3
+ 52: joule heating e
+ 53: electric field re e 1
+ 54: electric field re e 2
+ 55: electric field re e 3
+ 56: electric field im e 1
+ 57: electric field im e 2
+ 58: electric field im e 3
+ 59: temperature
+ 60: temperature loads

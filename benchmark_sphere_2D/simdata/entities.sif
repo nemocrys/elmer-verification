@@ -1,0 +1,17 @@
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = bc3
+End
+
+Boundary Condition 2
+  Name = bc4
+End
+
+Boundary Condition 3
+  Name = bc5
+End
+
+Boundary Condition 4
+  Name = bc6
+End
+

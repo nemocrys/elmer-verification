@@ -1,0 +1,14 @@
+Elmer version: 8.4
+Elmer revision: Release
+Elmer compilation date: 2020-04-09
+Solver input file: case.sif
+File started at: 2020/08/12 09:27:25
+ 
+Variables in columns of matrix: ./flux.dat
+   1: boundary sum: temperature loads over bc 1
+   2: boundary sum:  over bc 3
+   3: boundary sum:  over bc 4
+   4: boundary int: temperature flux over bc 1
+   5: boundary int:  over bc 3
+   6: boundary int:  over bc 4
+   7: res: heater power scaling

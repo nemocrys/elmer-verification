@@ -1,0 +1,9 @@
+Elmer version: 8.4
+Elmer revision: Release
+Elmer compilation date: 2020-08-03
+Solver input file: ./case.sif
+File started at: 2020/09/01 09:01:43
+ 
+Variables in columns of matrix: ./scalars.dat
+   1: boundary sum: temperature loads over bc 1
+   2: res: joule heating

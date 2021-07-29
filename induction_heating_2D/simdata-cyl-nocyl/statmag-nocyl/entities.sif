@@ -1,0 +1,5 @@
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = bc3
+End
+

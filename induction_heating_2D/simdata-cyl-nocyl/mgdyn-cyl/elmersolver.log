@@ -1,0 +1,144 @@
+ELMER SOLVER (v 8.4) STARTED AT: 2020/10/01 14:11:44
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 8.4 (Rev: Release, Compiled: 2020-08-03)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+LoadInputFile: Reading only "Run Control" section
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+Model Input:  Unlisted keyword: [optimize node ordering] in section: [solver 6]
+LoadInputFile: Number of BCs: 2
+LoadInputFile: Number of Body Forces: 2
+LoadInputFile: Number of Initial Conditions: 1
+LoadInputFile: Number of Materials: 3
+LoadInputFile: Number of Equations: 2
+LoadInputFile: Number of Solvers: 6
+LoadInputFile: Number of Bodies: 4
+Loading user function library: [MagnetoDynamics2D]...[MagnetoDynamics2DHarmonic_Init0]
+Loading user function library: [MagnetoDynamics]...[MagnetoDynamicsCalcFields_Init0]
+Loading user function library: [HeatSolve]...[HeatSolver_Init0]
+Loading user function library: [SaveData]...[SaveScalars_Init0]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_Init0]
+Loading user function library: [SaveData]...[SaveLine_Init0]
+LoadMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+Loading user function library: [MagnetoDynamics2D]...[MagnetoDynamics2DHarmonic_Init]
+Loading user function library: [MagnetoDynamics2D]...[MagnetoDynamics2DHarmonic_bulk]
+Loading user function library: [MagnetoDynamics2D]...[MagnetoDynamics2DHarmonic]
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: mgdyn2dharmonic...done.
+OptimizeBandwidth: Half bandwidth without optimization: 81433
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 1377
+OptimizeBandwidth: ---------------------------------------------------------
+Loading user function library: [MagnetoDynamics]...[MagnetoDynamicsCalcFields_Init]
+Loading user function library: [MagnetoDynamics]...[MagnetoDynamicsCalcFields_bulk]
+Loading user function library: [MagnetoDynamics]...[MagnetoDynamicsCalcFields]
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: calcfields...done.
+OptimizeBandwidth: Half bandwidth without optimization: 81433
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 1377
+OptimizeBandwidth: ---------------------------------------------------------
+Loading user function library: [HeatSolve]...[HeatSolver_Init]
+Loading user function library: [HeatSolve]...[HeatSolver_bulk]
+Loading user function library: [HeatSolve]...[HeatSolver]
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: heat equation...done.
+OptimizeBandwidth: Half bandwidth without optimization: 1678
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 88
+OptimizeBandwidth: ---------------------------------------------------------
+Loading user function library: [SaveData]...[SaveScalars_Init]
+Loading user function library: [SaveData]...[SaveScalars_bulk]
+Loading user function library: [SaveData]...[SaveScalars]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_Init]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_bulk]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver]
+Loading user function library: [SaveData]...[SaveLine_Init]
+Loading user function library: [SaveData]...[SaveLine_bulk]
+Loading user function library: [SaveData]...[SaveLine]
+ElmerSolver: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+MagnetoDynamics2DHarmonic: Solving equation for magnetic vector potential
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.76801237E-04  2.0000000     ) :: mgdyn2dharmonic
+Loading user function library: [MagnetoDynamics2D]...[MagnetoDynamics2DHarmonic_post]
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.76801237E-04  2.0000000     ) :: mgdyn2dharmonic
+MagnetoDynamicsCalcFields:  Eddy current power:    276.50303214860611
+MagnetoDynamicsCalcFields:  (Electro)Magnetic Field Energy:    1.0168017597524823E-002
+Loading user function library: [MagnetoDynamics]...[MagnetoDynamicsCalcFields_post]
+ComputeChange: SS (ITER=1) (NRM,RELC): (  0.0000000      0.0000000     ) :: calcfields
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+ComputeChange: NS (ITER=1) (NRM,RELC): (  293.89646      2.0000000     ) :: heat equation
+HeatSolve: iter:    1 Assembly: (s)    0.03    0.03
+HeatSolve: iter:    1 Solve:    (s)    0.01    0.01
+HeatSolve:  Result Norm   :    293.89646226165672
+HeatSolve:  Relative Change :    2.0000000000000000
+Loading user function library: [HeatSolve]...[HeatSolver_post]
+ComputeChange: SS (ITER=1) (NRM,RELC): (  293.89646      2.0000000     ) :: heat equation
+SaveLine: -----------------------------------------
+SaveLine: Saving data on lines to file: line.dat
+SaveLine: ------------------------------------------
+CreateListForSaving: Field Variables for Saving
+SaveLine: Number of nodes in specified lines: 201
+SaveLine: All done
+Loading user function library: [SaveData]...[SaveLine_post]
+SaveScalars: -----------------------------------------
+SaveScalars: Saving scalar values of various kinds
+SaveScalars: Saving names of values to file: ./scalars.dat.names
+SaveScalars: Saving values to file: ./scalars.dat
+Loading user function library: [SaveData]...[SaveScalars_post]
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+WARNING:: WriteVtuXMLFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuXMLFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuXMLFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuXMLFile: Nonexistent variable: phase surface
+WriteVtuFile: Writing variable: joule heating e
+WriteVtuFile: Writing variable: magnetic flux density e
+WARNING:: WriteVtuXMLFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuXMLFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuXMLFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuXMLFile: Nonexistent variable: phase surface
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):        26.84       26.84
+ELMER SOLVER FINISHED AT: 2020/10/01 14:12:11
