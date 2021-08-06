@@ -8,17 +8,20 @@ Elmergrid loading data:
 Format chosen using the first line: $MeshFormat
 Gmsh version is 2.2
 Loading mesh in Gmsh format 2.0 from file induction_verification.msh2
-Allocating for 81590 knots and 162994 elements.
-Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 3 "outside_surfs"
+Allocating for 78923 knots and 157802 elements.
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 5 "cylinder_surf"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 6 "outside_surfs"
 Moving bulk elements to boundary elements
 Leading bulk elementtype is 303
 Trailing bulk elementtype is 202
-There are 80 (out of 162994) lower dimensional elements.
-Node 277 belongs to maximum of 8 elements
-Found correctly 80 side elements.
-Parent elements were reordered up to index 162914.
-Moved 162914 elements (out of 162994) to new positions
+There are 110 (out of 157802) lower dimensional elements.
+Node 483 belongs to maximum of 9 elements
+Found 42 side elements that have two parents.
+Found correctly 110 side elements.
+Parent elements were reordered up to index 157692.
+Moved 157692 elements (out of 157802) to new positions
 Successfully read the mesh from the Gmsh input file.
+Using physical numbering of entities
 
 Elmergrid creating and manipulating meshes:
 -------------------------------------------
@@ -26,8 +29,8 @@ Elmergrid creating and manipulating meshes:
 Elmergrid saving data with method 2:
 -------------------------------------
 Saving mesh in ElmerSolver format to directory induction_verification.
-Saving 81590 coordinates to mesh.nodes.
-Saving 162914 element topologies to mesh.elements.
+Saving 78923 coordinates to mesh.nodes.
+Saving 157692 element topologies to mesh.elements.
 Saving boundary elements to mesh.boundary.
 Saving header info to mesh.header.
 Saving names info to mesh.names.

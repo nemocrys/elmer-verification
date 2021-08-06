@@ -1,9 +1,9 @@
 Variables in file: ./line.dat
-Elmer version: 8.4
+Elmer version: 9.0
 Elmer revision: Release
-Elmer compilation date: 2020-08-03
+Elmer compilation date: 2020-11-10
 Solver input file: case.sif
-File started at: 2020/10/13 07:52:55
+File started at: 2021/08/06 09:07:39
 Number of data nodes for each step
   bc nodes: 0
   polyline nodes: 201
@@ -23,3 +23,5 @@ Data on different columns
  11: magnetic flux density 3
  12: joule heating
  13: joule field
+ 14: temperature
+ 15: temperature loads

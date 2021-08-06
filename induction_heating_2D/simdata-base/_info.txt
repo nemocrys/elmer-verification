@@ -1,3 +1,0 @@
-Solved with StatMagSolver
-n_l = 10
-alpha_mesh = 1

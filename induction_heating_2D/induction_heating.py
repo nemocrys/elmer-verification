@@ -1,10 +1,8 @@
-# created by Arved Enders-Seidlitz on 26.08.2020
-
 import os
 import shutil
 import subprocess
 import gmsh
-from pyelmer import elmer
+import pyelmer.elmerkw as elmer
 from pyelmer.gmsh import *
 
 
@@ -178,8 +176,15 @@ def geometry_quad(l, n_l, r_e, r_i, d, alpha_mesh=1):
 
 
 def sif(ph_cylinder, ph_cylinder_ends, ph_coil, ph_air, ph_cylinder_surf, ph_outside_surfs, omega, I, rho, d, l_tot, with_cylinder=True, mgdyn=False):
-    sim = elmer.load_simulation('axi-symmetric_steady')
-    sim.settings.update({'Angular Frequency': omega})
+    sim = elmer.Simulation()
+    sim.settings = {
+        "Max Output Level": 4,
+        "Coordinate System": "Axi Symmetric",
+        "Simulation Type": "Steady state",
+        "Steady State Max Iterations": 10,
+        "Output File": "case.result"
+    }
+    sim.settings.update({'Angular Frequency': omega})  # for mgdyn solver
     # solvers
     if mgdyn:
         solver_mgdyn = elmer.Solver(sim, 'mgdyn')
@@ -194,7 +199,6 @@ def sif(ph_cylinder, ph_cylinder_ends, ph_coil, ph_air, ph_cylinder_surf, ph_out
             'Equation': 'CalcFields',
             'Procedure': '"MagnetoDynamics" "MagnetoDynamicsCalcFields"',
             'Potential Variable': 'Potential',
-            # 'Angular Frequency': omega,
             'Calculate Joule Heating': True,
             'Calculate Magnetic Field Strength': True,
             'Calculate Electric Field': True,
