@@ -1,0 +1,71 @@
+
+Starting program Elmergrid
+Elmergrid reading in-line arguments
+Output will be saved to file 2d_sphere.
+
+Elmergrid loading data:
+-----------------------
+Format chosen using the first line: $MeshFormat
+Gmsh version is 4.1
+Loading mesh in Gmsh format 4.1 from file 2d_sphere.msh
+Reading 12 entities in 0D
+Reading 12 entities in 1D
+Reading 2 entities in 2D
+Allocating for 5874 knots and 11704 elements.
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 3 "heater_inside"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 4 "heater_outside"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 5 "insulation_inside"
+Physical groups of dimension 1 not supported in 3-dimensional mesh: ignoring group 6 "insulation_outside"
+Boundary name for physical group 1 is: heater
+Boundary name for physical group 2 is: insulation
+Allocating lookup table for tags of size 12
+Maximum original tag for 12 1DIM entities is 12
+Maximum original tag for 2 2DIM entities is 2
+Reading 5874 nodes in 26 blocks.
+Reading 11704 elements in 10 blocks.
+Reading 79 elements with tag 1 of type 202
+Mapping mesh tag 1 to physical tag 4 in 1DIM
+Reading 63 elements with tag 3 of type 202
+Mapping mesh tag 3 to physical tag 3 in 1DIM
+Reading 63 elements with tag 4 of type 202
+Mapping mesh tag 4 to physical tag 3 in 1DIM
+Reading 79 elements with tag 6 of type 202
+Mapping mesh tag 6 to physical tag 4 in 1DIM
+Reading 158 elements with tag 7 of type 202
+Mapping mesh tag 7 to physical tag 6 in 1DIM
+Reading 142 elements with tag 9 of type 202
+Mapping mesh tag 9 to physical tag 5 in 1DIM
+Reading 142 elements with tag 10 of type 202
+Mapping mesh tag 10 to physical tag 5 in 1DIM
+Reading 158 elements with tag 12 of type 202
+Mapping mesh tag 12 to physical tag 6 in 1DIM
+Reading 3594 elements with tag 1 of type 303
+Mapping mesh tag 1 to physical tag 1 in 2DIM
+Reading 7226 elements with tag 2 of type 303
+Mapping mesh tag 2 to physical tag 2 in 2DIM
+Moving bulk elements to boundary elements
+Leading bulk elementtype is 303
+Trailing bulk elementtype is 202
+There are 884 (out of 11704) lower dimensional elements.
+Node 87 belongs to maximum of 13 elements
+Found correctly 884 side elements.
+Parent elements were reordered up to index 10820.
+Moved 10820 elements (out of 11704) to new positions
+Successfully read the mesh from the Gmsh input file.
+Using physical numbering of entities
+
+Elmergrid creating and manipulating meshes:
+-------------------------------------------
+
+Elmergrid saving data with method 2:
+-------------------------------------
+Saving mesh in ElmerSolver format to directory 2d_sphere.
+Saving 5874 coordinates to mesh.nodes.
+Saving 10820 element topologies to mesh.elements.
+Saving boundary elements to mesh.boundary.
+Saving header info to mesh.header.
+Saving names info to mesh.names.
+Saving entities info to entities.sif.
+
+Thank you for using Elmergrid!
+Send bug reports and feature wishes to elmeradm@csc.fi

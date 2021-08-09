@@ -1,0 +1,64 @@
+HeatSolver:
+  Equation: Heat Equation
+  Procedure: '"HeatSolve" "HeatSolver"'
+  Variable: '"Temperature"'
+  Variable Dofs: 1
+  Calculate Loads: True
+  Exec Solver: Always
+  Nonlinear System Convergence Tolerance: 1.0e-6
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1.0e-6
+  Stabilize: True  # Necessary in convection-dominated systems
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative  
+  Linear System Iterative Method: BiCGStab
+  Linear System Max Iterations: 1000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1.0e-8
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 1
+  Smart Heater Control After Tolerance: 1.0e-4
+
+ResultOutputSolver:
+  Exec Solver: 'After timestep'
+  Equation: ResultOutputSolver
+  Procedure: '"ResultOutputSolve" "ResultOutputSolver"'
+  VTU Format: True
+  Save Geometry Ids: 'Logical True'
+
+FluxSolver:
+  Exec Solver: 'After timestep'
+  Equation: 'Flux Solver'
+  Procedure: '"FluxSolver" "FluxSolver"'
+  Calculate Grad: 'Logical True'
+  Calculate Flux: 'Logical True'
+  Target Variable: 'String "Temperature"'
+  Flux Coefficient: 'String "Heat Conductivity"'
+  Exec Solver: Always
+  Nonlinear System Convergence Tolerance: 1.0e-6
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1.0e-6
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative  
+  Linear System Iterative Method: BiCGStab
+  Linear System Max Iterations: 1000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1.0e-8
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 1
+
+SaveScalars:
+  Exec Solver: 'After timestep'
+  Equation: SaveScalars
+  Procedure: '"SaveData" "SaveScalars"'
+  Filename: '"boundary_scalars.dat"'
+  Output Directory: './results'
+  Operator 1: 'boundary sum'
+  Variable 1: 'Temperature Loads'
+  Operator 2: 'diffusive flux'
+  Variable 2: Temperature
+  Coefficient 2: 'Heat Conductivity'

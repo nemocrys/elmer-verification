@@ -1,0 +1,904 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2021/08/09 10:40:05
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: Release, Compiled: 2020-11-10)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+LoadInputFile: Reading only "Run Control" section
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Number of BCs: 4
+LoadInputFile: Number of Body Forces: 1
+LoadInputFile: Number of Initial Conditions: 1
+LoadInputFile: Number of Materials: 2
+LoadInputFile: Number of Equations: 1
+LoadInputFile: Number of Solvers: 2
+LoadInputFile: Number of Bodies: 2
+ElmerAsciiMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+RadiationFactors: Gebhardt factors determined (s)        4.7600E-01
+RadiationFactors: All done time (s)                      4.7600E-01
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: heat equation...done.
+OptimizeBandwidth: Half bandwidth without optimization: 5713
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 553
+OptimizeBandwidth: ---------------------------------------------------------
+ElmerSolver: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: Using Integral Heater Control
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.3436E+00
+       2 0.1035E+01
+       3 0.1254E+01
+       4 0.1032E+01
+       5 0.7358E+00
+       6 0.5098E+00
+       7 0.4417E+00
+       8 0.3917E+00
+       9 0.3381E+00
+      10 0.2759E+00
+      11 0.2055E+00
+      12 0.1522E+00
+      13 0.1115E+00
+      14 0.8926E-01
+      15 0.6207E-01
+      16 0.5666E-01
+      17 0.4594E-01
+      18 0.4014E-01
+      19 0.3647E-01
+      20 0.3431E-01
+      21 0.3279E-01
+      22 0.3137E-01
+      23 0.3027E-01
+      24 0.2929E-01
+      25 0.2828E-01
+      26 0.2738E-01
+      27 0.2458E-01
+      28 0.2316E-01
+      29 0.2285E-01
+      30 0.2449E-01
+      31 0.3290E-01
+      32 0.1003E+00
+      33 0.1129E-01
+      34 0.6954E-02
+      35 0.7407E-02
+      36 0.3371E-02
+      37 0.2498E-02
+      38 0.2450E-02
+      39 0.2416E-02
+      40 0.2385E-02
+      41 0.3180E-02
+      42 0.4346E-03
+      43 0.2457E-03
+      44 0.2086E-03
+      45 0.1709E-03
+      46 0.1595E-03
+      47 0.1295E-03
+      48 0.1141E-03
+      49 0.1056E-03
+      50 0.9787E-04
+      51 0.9275E-04
+      52 0.9997E-04
+      53 0.1768E-03
+      54 0.4870E-04
+      55 0.4782E-04
+      56 0.4787E-04
+      57 0.4706E-04
+      58 0.4615E-04
+      59 0.4491E-04
+      60 0.3968E-04
+      61 0.3540E-04
+      62 0.2476E-04
+      63 0.4430E-04
+      64 0.2427E-04
+      65 0.2192E-04
+      66 0.1734E-04
+      67 0.1504E-04
+      68 0.1506E-04
+      69 0.1035E-04
+      70 0.3406E-05
+      71 0.1339E-05
+      72 0.6878E-06
+      73 0.5137E-06
+      74 0.4589E-06
+      75 0.3880E-06
+      76 0.3032E-06
+      77 0.3534E-06
+      78 0.2522E-06
+      79 0.1585E-06
+      80 0.1253E-06
+      81 0.1856E-06
+      82 0.3552E-06
+      83 0.6673E-07
+      84 0.1573E-07
+      85 0.8890E-08
+      85 0.8890E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  1885.2849      2.0000000     ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    1 Assembly: (s)    0.14    0.14
+HeatSolve: iter:    1 Solve:    (s)    0.14    0.14
+HeatSolve:  Result Norm   :    1885.2848662923645
+HeatSolve:  Relative Change :    2.0000000000000000
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           2
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1170E-01
+       2 0.4813E-02
+       3 0.2329E-02
+       4 0.1383E-02
+       5 0.1257E-02
+       6 0.1242E-02
+       7 0.6630E-02
+       8 0.7087E-03
+       9 0.4477E-03
+      10 0.1230E-03
+      11 0.6687E-05
+      12 0.9737E-06
+      13 0.2754E-06
+      14 0.1504E-06
+      15 0.2388E-07
+      16 0.6831E-07
+      17 0.5414E-08
+      17 0.5414E-08
+ComputeChange: NS (ITER=2) (NRM,RELC): (  1610.9410     0.15693717     ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    2 Assembly: (s)    0.17    0.32
+HeatSolve: iter:    2 Solve:    (s)    0.06    0.20
+HeatSolve:  Result Norm   :    1610.9409709430995
+HeatSolve:  Relative Change :   0.15693717060691609
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           3
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1469E-01
+       2 0.6274E-02
+       3 0.3149E-02
+       4 0.1796E-02
+       5 0.1419E-02
+       6 0.1357E-02
+       7 0.1658E-02
+       8 0.4853E-03
+       9 0.2647E-03
+      10 0.1173E-02
+      11 0.1798E-04
+      12 0.3898E-05
+      13 0.2084E-05
+      14 0.1144E-05
+      15 0.3748E-06
+      16 0.4780E-07
+      17 0.1673E-07
+      18 0.2330E-08
+      18 0.2330E-08
+ComputeChange: NS (ITER=3) (NRM,RELC): (  1385.0581     0.15078970     ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    3 Assembly: (s)    0.15    0.46
+HeatSolve: iter:    3 Solve:    (s)    0.06    0.26
+HeatSolve:  Result Norm   :    1385.0580732357444
+HeatSolve:  Relative Change :   0.15078969944682746
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           4
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1792E-01
+       2 0.7935E-02
+       3 0.4150E-02
+       4 0.2251E-02
+       5 0.1616E-02
+       6 0.1533E-02
+       7 0.1593E-02
+       8 0.2751E-02
+       9 0.1393E-03
+      10 0.1039E-03
+      11 0.2222E-03
+      12 0.9977E-05
+      13 0.5193E-05
+      14 0.3500E-05
+      15 0.1442E-05
+      16 0.4307E-06
+      17 0.6505E-07
+      18 0.1100E-07
+      19 0.4166E-08
+      19 0.4166E-08
+ComputeChange: NS (ITER=4) (NRM,RELC): (  1212.3115     0.13301653     ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    4 Assembly: (s)    0.15    0.61
+HeatSolve: iter:    4 Solve:    (s)    0.06    0.31
+HeatSolve:  Result Norm   :    1212.3115328720401
+HeatSolve:  Relative Change :   0.13301652560920568
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           5
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2057E-01
+       2 0.9393E-02
+       3 0.5075E-02
+       4 0.2661E-02
+       5 0.1853E-02
+       6 0.1712E-02
+       7 0.1731E-02
+       8 0.2284E-02
+       9 0.4830E-02
+      10 0.6288E-03
+      11 0.1264E-03
+      12 0.4296E-04
+      13 0.2336E-04
+      14 0.1606E-04
+      15 0.8077E-05
+      16 0.3236E-05
+      17 0.1272E-05
+      18 0.1079E-05
+      19 0.2762E-06
+      20 0.1258E-06
+      21 0.5918E-07
+      22 0.3057E-07
+      23 0.1501E-07
+      24 0.7918E-08
+      24 0.7918E-08
+ComputeChange: NS (ITER=5) (NRM,RELC): (  1090.5188     0.10577651     ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    5 Assembly: (s)    0.15    0.76
+HeatSolve: iter:    5 Solve:    (s)    0.06    0.38
+HeatSolve:  Result Norm   :    1090.5188476974224
+HeatSolve:  Relative Change :   0.10577651415602722
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           6
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2160E-01
+       2 0.1009E-01
+       3 0.5549E-02
+       4 0.2848E-02
+       5 0.1878E-02
+       6 0.1690E-02
+       7 0.1662E-02
+       8 0.1715E-02
+       9 0.1907E-02
+      10 0.2762E-02
+      11 0.1180E-02
+      12 0.1633E-03
+      13 0.6577E-04
+      14 0.4446E-04
+      15 0.2733E-04
+      16 0.1436E-04
+      17 0.7243E-05
+      18 0.2660E-05
+      19 0.1250E-05
+      20 0.4365E-06
+      21 0.1853E-06
+      22 0.8810E-07
+      23 0.9535E-07
+      24 0.3003E-07
+      25 0.1379E-07
+      26 0.6106E-08
+      26 0.6106E-08
+ComputeChange: NS (ITER=6) (NRM,RELC): (  1012.9640     0.73739455E-01 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    6 Assembly: (s)    0.14    0.90
+HeatSolve: iter:    6 Solve:    (s)    0.07    0.44
+HeatSolve:  Result Norm   :    1012.9640075286432
+HeatSolve:  Relative Change :    7.3739455471287199E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           7
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1998E-01
+       2 0.9454E-02
+       3 0.5238E-02
+       4 0.2654E-02
+       5 0.1705E-02
+       6 0.1582E-02
+       7 0.1546E-02
+       8 0.1503E-02
+       9 0.1431E-02
+      10 0.1271E-02
+      11 0.6933E-03
+      12 0.2098E-03
+      13 0.7933E-04
+      14 0.5180E-04
+      15 0.3560E-04
+      16 0.2278E-04
+      17 0.1353E-04
+      18 0.6085E-05
+      19 0.5920E-05
+      20 0.2106E-05
+      21 0.1233E-05
+      22 0.8554E-06
+      23 0.5754E-06
+      24 0.3272E-06
+      25 0.2925E-06
+      26 0.8927E-07
+      27 0.2290E-07
+      28 0.2566E-07
+      29 0.2234E-07
+      30 0.1739E-07
+      31 0.1131E-07
+      32 0.4649E-08
+      32 0.4649E-08
+ComputeChange: NS (ITER=7) (NRM,RELC): (  970.13271     0.43196379E-01 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    7 Assembly: (s)    0.14    1.04
+HeatSolve: iter:    7 Solve:    (s)    0.07    0.51
+HeatSolve:  Result Norm   :    970.13270873328190
+HeatSolve:  Relative Change :    4.3196379121737342E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           8
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1464E-01
+       2 0.6974E-02
+       3 0.3873E-02
+       4 0.1947E-02
+       5 0.1240E-02
+       6 0.1172E-02
+       7 0.1154E-02
+       8 0.1157E-02
+       9 0.1114E-02
+      10 0.9336E-03
+      11 0.4176E-03
+      12 0.1347E-03
+      13 0.6104E-04
+      14 0.3836E-04
+      15 0.2703E-04
+      16 0.1924E-04
+      17 0.1454E-04
+      18 0.9566E-05
+      19 0.1200E-04
+      20 0.1532E-04
+      21 0.5091E-03
+      22 0.3399E-03
+      23 0.1283E-04
+      24 0.1527E-05
+      25 0.2176E-06
+      26 0.2811E-07
+      27 0.1073E-07
+      28 0.7942E-08
+      28 0.7942E-08
+ComputeChange: NS (ITER=8) (NRM,RELC): (  950.61740     0.20320507E-01 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    8 Assembly: (s)    0.14    1.18
+HeatSolve: iter:    8 Solve:    (s)    0.07    0.58
+HeatSolve:  Result Norm   :    950.61740055440021
+HeatSolve:  Relative Change :    2.0320507164900307E-002
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           9
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7408E-02
+       2 0.3540E-02
+       3 0.1967E-02
+       4 0.9856E-03
+       5 0.6262E-03
+       6 0.5972E-03
+       7 0.5928E-03
+       8 0.6101E-03
+       9 0.5959E-03
+      10 0.4960E-03
+      11 0.2163E-03
+      12 0.7225E-04
+      13 0.3308E-04
+      14 0.2039E-04
+      15 0.1428E-04
+      16 0.9962E-05
+      17 0.9213E-05
+      18 0.3512E-04
+      19 0.2119E-05
+      20 0.5261E-06
+      21 0.4105E-06
+      22 0.3010E-06
+      23 0.2018E-06
+      24 0.1373E-06
+      25 0.1060E-06
+      26 0.7631E-07
+      27 0.5443E-07
+      28 0.4388E-07
+      29 0.4655E-07
+      30 0.6453E-07
+      31 0.2508E-07
+      32 0.6903E-09
+      32 0.6903E-09
+ComputeChange: NS (ITER=9) (NRM,RELC): (  943.30799     0.77187971E-02 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    9 Assembly: (s)    0.14    1.32
+HeatSolve: iter:    9 Solve:    (s)    0.07    0.65
+HeatSolve:  Result Norm   :    943.30798766616226
+HeatSolve:  Relative Change :    7.7187970906346017E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          10
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2743E-02
+       2 0.1312E-02
+       3 0.7293E-03
+       4 0.3649E-03
+       5 0.2317E-03
+       6 0.2218E-03
+       7 0.2209E-03
+       8 0.2300E-03
+       9 0.2259E-03
+      10 0.1879E-03
+      11 0.8158E-04
+      12 0.2757E-04
+      13 0.1269E-04
+      14 0.7810E-05
+      15 0.5461E-05
+      16 0.3092E-05
+      17 0.2650E-05
+      18 0.2642E-05
+      19 0.4610E-06
+      20 0.1463E-06
+      21 0.1163E-06
+      22 0.9390E-07
+      23 0.4906E-07
+      24 0.3188E-07
+      25 0.6892E-07
+      26 0.1942E-07
+      27 0.6350E-08
+      27 0.6350E-08
+ComputeChange: NS (ITER=10) (NRM,RELC): (  940.90782     0.25476562E-02 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   10 Assembly: (s)    0.14    1.47
+HeatSolve: iter:   10 Solve:    (s)    0.06    0.72
+HeatSolve:  Result Norm   :    940.90782066673603
+HeatSolve:  Relative Change :    2.5476561536226937E-003
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          11
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8815E-03
+       2 0.4218E-03
+       3 0.2344E-03
+       4 0.1173E-03
+       5 0.7444E-04
+       6 0.7135E-04
+       7 0.7114E-04
+       8 0.7434E-04
+       9 0.7315E-04
+      10 0.6086E-04
+      11 0.2640E-04
+      12 0.8958E-05
+      13 0.4134E-05
+      14 0.2547E-05
+      15 0.1782E-05
+      16 0.8484E-06
+      17 0.7107E-06
+      18 0.5158E-06
+      19 0.1272E-06
+      20 0.6132E-07
+      21 0.4672E-07
+      22 0.3803E-07
+      23 0.2913E-07
+      24 0.2808E-07
+      25 0.1964E-06
+      26 0.9866E-08
+      26 0.9866E-08
+ComputeChange: NS (ITER=11) (NRM,RELC): (  940.16532     0.78944392E-03 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   11 Assembly: (s)    0.15    1.61
+HeatSolve: iter:   11 Solve:    (s)    0.06    0.78
+HeatSolve:  Result Norm   :    940.16531978530168
+HeatSolve:  Relative Change :    7.8944392481828068E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          12
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2701E-03
+       2 0.1292E-03
+       3 0.7183E-04
+       4 0.3593E-04
+       5 0.2280E-04
+       6 0.2187E-04
+       7 0.2181E-04
+       8 0.2282E-04
+       9 0.2247E-04
+      10 0.1869E-04
+      11 0.8108E-05
+      12 0.2758E-05
+      13 0.1277E-05
+      14 0.7893E-06
+      15 0.5538E-06
+      16 0.2540E-06
+      17 0.2173E-06
+      18 0.1442E-06
+      19 0.3934E-07
+      20 0.1981E-07
+      21 0.1539E-07
+      22 0.1253E-07
+      23 0.1054E-07
+      24 0.1143E-07
+      25 0.2581E-06
+      26 0.3158E-08
+      26 0.3158E-08
+ComputeChange: NS (ITER=12) (NRM,RELC): (  939.94041     0.23924828E-03 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   12 Assembly: (s)    0.14    1.75
+HeatSolve: iter:   12 Solve:    (s)    0.06    0.84
+HeatSolve:  Result Norm   :    939.94041375584823
+HeatSolve:  Relative Change :    2.3924827784003739E-004
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          13
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.8153E-04
+       2 0.3902E-04
+       3 0.2169E-04
+       4 0.1085E-04
+       5 0.6885E-05
+       6 0.6603E-05
+       7 0.6586E-05
+       8 0.6893E-05
+       9 0.6788E-05
+      10 0.5647E-05
+      11 0.2450E-05
+      12 0.8346E-06
+      13 0.3877E-06
+      14 0.2404E-06
+      15 0.1693E-06
+      16 0.7790E-07
+      17 0.6738E-07
+      18 0.4282E-07
+      19 0.1227E-07
+      20 0.6262E-08
+      20 0.6262E-08
+ComputeChange: NS (ITER=13) (NRM,RELC): (  939.87274     0.71996191E-04 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   13 Assembly: (s)    0.14    1.89
+HeatSolve: iter:   13 Solve:    (s)    0.06    0.90
+HeatSolve:  Result Norm   :    939.87274406227584
+HeatSolve:  Relative Change :    7.1996190994776655E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          14
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2451E-04
+       2 0.1173E-04
+       3 0.6519E-05
+       4 0.3260E-05
+       5 0.2070E-05
+       6 0.1985E-05
+       7 0.1980E-05
+       8 0.2072E-05
+       9 0.2040E-05
+      10 0.1697E-05
+      11 0.7360E-06
+      12 0.2495E-06
+      13 0.1146E-06
+      14 0.7005E-07
+      15 0.4857E-07
+      16 0.2331E-07
+      17 0.1929E-07
+      18 0.1454E-07
+      19 0.3167E-08
+      19 0.3167E-08
+ComputeChange: NS (ITER=14) (NRM,RELC): (  939.85242     0.21623517E-04 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   14 Assembly: (s)    0.14    2.04
+HeatSolve: iter:   14 Solve:    (s)    0.05    0.95
+HeatSolve:  Result Norm   :    939.85242092747092
+HeatSolve:  Relative Change :    2.1623517292259706E-005
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          15
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.7356E-05
+       2 0.3521E-05
+       3 0.1957E-05
+       4 0.9786E-06
+       5 0.6211E-06
+       6 0.5957E-06
+       7 0.5942E-06
+       8 0.6220E-06
+       9 0.6125E-06
+      10 0.5095E-06
+      11 0.2208E-06
+      12 0.7421E-07
+      13 0.3339E-07
+      14 0.1994E-07
+      15 0.1346E-07
+      16 0.7342E-08
+      16 0.7342E-08
+ComputeChange: NS (ITER=15) (NRM,RELC): (  939.84632     0.64944482E-05 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   15 Assembly: (s)    0.14    2.18
+HeatSolve: iter:   15 Solve:    (s)    0.05    1.00
+HeatSolve:  Result Norm   :    939.84631712445491
+HeatSolve:  Relative Change :    6.4944481713375760E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          16
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.2207E-05
+       2 0.1056E-05
+       3 0.5868E-06
+       4 0.2933E-06
+       5 0.1860E-06
+       6 0.1784E-06
+       7 0.1780E-06
+       8 0.1864E-06
+       9 0.1836E-06
+      10 0.1527E-06
+      11 0.6593E-07
+      12 0.2136E-07
+      13 0.9063E-08
+      13 0.9063E-08
+ComputeChange: NS (ITER=16) (NRM,RELC): (  939.84451     0.19199518E-05 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   16 Assembly: (s)    0.14    2.32
+HeatSolve: iter:   16 Solve:    (s)    0.05    1.05
+HeatSolve:  Result Norm   :    939.84451266652070
+HeatSolve:  Relative Change :    1.9199518406053948E-006
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION          17
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.6619E-06
+       2 0.3169E-06
+       3 0.1763E-06
+       4 0.8849E-07
+       5 0.5641E-07
+       6 0.5407E-07
+       7 0.5388E-07
+       8 0.5611E-07
+       9 0.5499E-07
+      10 0.4557E-07
+      11 0.1950E-07
+      12 0.6298E-08
+      12 0.6298E-08
+ComputeChange: NS (ITER=17) (NRM,RELC): (  939.84401     0.53642808E-06 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:   17 Assembly: (s)    0.14    2.46
+HeatSolve: iter:   17 Solve:    (s)    0.04    1.10
+HeatSolve:  Result Norm   :    939.84400850767202
+HeatSolve:  Relative Change :    5.3642807625358626E-007
+ComputeChange: SS (ITER=1) (NRM,RELC): (  939.84401      2.0000000     ) :: heat equation
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+SaveResult: -----------------------------------------
+SaveResult: Saving results to file: ././case.result
+SaveResult: -----------------------------------------
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            2
+MAIN: -------------------------------------
+MAIN: 
+HeatSolve: Using Integral Heater Control
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+       1 0.1981E-06
+       2 0.9482E-07
+       3 0.5315E-07
+       4 0.2753E-07
+       5 0.1875E-07
+       6 0.1826E-07
+       7 0.1821E-07
+       8 0.1889E-07
+       9 0.1831E-07
+      10 0.1488E-07
+      11 0.6531E-08
+      11 0.6531E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  939.84388     0.13494946E-06 ) :: heat equation
+HeatSolve: Heater Control Information
+HeatSolve: Heater for body:                                1
+HeatSolve: Heater type:                      Integral heater
+HeatSolve: Heater Volume (m^3):                   2.5551E-01
+HeatSolve: Heater Power (W):                      3.0000E+04
+HeatSolve: Heater scaling:                        3.9138E+00
+HeatSolve: Heater Power Density (W/kg):           1.1741E+05
+HeatSolve: iter:    1 Assembly: (s)    0.14    0.14
+HeatSolve: iter:    1 Solve:    (s)    0.04    0.04
+HeatSolve:  Result Norm   :    939.84388167623865
+HeatSolve:  Relative Change :    1.3494946051973097E-007
+ComputeChange: SS (ITER=2) (NRM,RELC): (  939.84388     0.13494946E-06 ) :: heat equation
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):         4.43        4.43
+ELMER SOLVER FINISHED AT: 2021/08/09 10:40:09
