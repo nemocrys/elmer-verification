@@ -1,0 +1,24 @@
+Metadata for SaveScalars file: results/open_wire.dat
+Elmer version: 9.0
+Elmer revision: 7e41a0147
+Elmer compilation date: 2023-04-11
+Solver input file: ibc_circuit.sif
+File started at: 2023/04/12 06:56:43
+ 
+Variables in columns of matrix: 
+   1: res: eddy current power
+   2: res: electromagnetic field energy
+   3: res: surface current power
+   4: res: time
+   5: res: i_v1 re
+   6: res: i_v1 im
+   7: res: i_component(1) re
+   8: res: i_component(1) im
+   9: res: v_v1 re
+  10: res: v_v1 im
+  11: res: v_component(1) re
+  12: res: v_component(1) im
+  13: res: u_1_circuit_1 re
+  14: res: u_1_circuit_1 im
+  15: res: r_component(1)
+  16: res: p_dc_component(1)
