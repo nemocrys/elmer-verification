@@ -45,7 +45,7 @@ Material 1
 !  Relative Permittivity = 1
   Relative Permeability = 1
 !  Electric Conductivity = 0.0
-  Electric Conductivity = Real 1 ! Skin BC is taking care of this
+  Electric Conductivity = Real 0.0 ! Skin BC is taking care of this
 End
 
 Material 2
