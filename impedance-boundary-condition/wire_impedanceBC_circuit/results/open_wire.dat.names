@@ -1,9 +1,9 @@
 Metadata for SaveScalars file: results/open_wire.dat
 Elmer version: 9.0
-Elmer revision: 40e221719
-Elmer compilation date: 2023-05-05
+Elmer revision: 99630ba19
+Elmer compilation date: 2023-05-12
 Solver input file: ibc_circuit.sif
-File started at: 2023/05/05 07:52:22
+File started at: 2023/05/12 05:51:39
  
 Variables in columns of matrix: 
    1: res: eddy current power
