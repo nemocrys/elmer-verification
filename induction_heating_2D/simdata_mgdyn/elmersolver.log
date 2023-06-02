@@ -1,0 +1,142 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2023/06/02 08:59:39
+ParCommInit:  Initialize #PEs:            1
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: Release, Compiled: 2023-05-09)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  Lua interpreter linked in.
+MAIN:  External optimization routines linked in.
+MAIN: =============================================================
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 2
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 2
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 3
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 3
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 4
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 4
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 5
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 5
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 6
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 6
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 7
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 7
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 8
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 8
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 9
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 9
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 2
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 2
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 3
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 3
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 4
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 4
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 5
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 5
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 6
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 6
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 7
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 7
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 8
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 8
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 9
+CheckKeyword: Found keyword type assuming suffix 1 for: scalar field 9
+CheckKeyword:  Unlisted keyword: [optimize node ordering] in section: [solver 6]
+LoadInputFile: Number of BCs: 2
+LoadInputFile: Number of Body Forces: 2
+LoadInputFile: Number of Initial Conditions: 1
+LoadInputFile: Number of Materials: 3
+LoadInputFile: Number of Equations: 2
+LoadInputFile: Number of Solvers: 6
+LoadInputFile: Number of Bodies: 4
+ListTagKeywords: Setting weight for keywords!
+ListTagKeywords: No parameters width suffix: normalize by area
+ListTagKeywords: Setting weight for keywords!
+ListTagKeywords: No parameters width suffix: normalize by volume
+ElmerAsciiMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+OptimizeBandwidth: Initial bandwidth for mgdyn2dharmonic: 78438
+OptimizeBandwidth: Optimized bandwidth for mgdyn2dharmonic: 1701
+OptimizeBandwidth: Initial bandwidth for calcfields: 78438
+OptimizeBandwidth: Optimized bandwidth for calcfields: 1701
+OptimizeBandwidth: Initial bandwidth for heat equation: 453
+OptimizeBandwidth: Optimized bandwidth for heat equation: 49
+MAIN: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+MagnetoDynamics2DHarmonic: Solving equation for magnetic vector potential
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.10199047E-03  2.0000000     ) :: mgdyn2dharmonic
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.10199047E-03  2.0000000     ) :: mgdyn2dharmonic
+MagnetoDynamicsCalcFields: Eddy current power:    9.373274E+02
+MagnetoDynamicsCalcFields: ElectroMagnetic Field Energy:    3.649282E-02
+ComputeChange: SS (ITER=1) (NRM,RELC): (  0.0000000      0.0000000     ) :: calcfields
+HeatSolve: 
+HeatSolve: 
+HeatSolve: -------------------------------------
+HeatSolve:  TEMPERATURE ITERATION           1
+HeatSolve: -------------------------------------
+HeatSolve: 
+HeatSolve: Starting Assembly...
+HeatSolve: Assembly done
+ComputeChange: NS (ITER=1) (NRM,RELC): (  294.08323      2.0000000     ) :: heat equation
+HeatSolve: iter:    1 Assembly: (s)    0.02    0.02
+HeatSolve: iter:    1 Solve:    (s)    0.01    0.01
+HeatSolve:  Result Norm   :    294.08323076739896
+HeatSolve:  Relative Change :    2.0000000000000000
+ComputeChange: SS (ITER=1) (NRM,RELC): (  294.08323      2.0000000     ) :: heat equation
+SaveLine: -----------------------------------------
+SaveLine: Saving data on lines to file: line.dat
+SaveLine: ------------------------------------------
+CreateListForSaving: Field Variables for Saving
+SaveLine: Number of nodes in specified lines: 201
+SaveLine: All done
+SaveScalars: -----------------------------------------
+SaveScalars: Saving scalar values of various kinds
+SaveScalars: Saving names of values to file: ./scalars.dat.names
+SaveScalars: Saving values to file: ./scalars.dat
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+WARNING:: WriteVtuFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuFile: Nonexistent variable: phase surface
+WARNING:: WriteVtuFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuFile: Nonexistent variable: phase surface
+WARNING:: WriteVtuFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuFile: Nonexistent variable: phase surface
+WARNING:: WriteVtuFile: Nonexistent variable: heat conductivity
+WARNING:: WriteVtuFile: Nonexistent variable: joule heating
+WARNING:: WriteVtuFile: Nonexistent variable: magnetic flux density
+WARNING:: WriteVtuFile: Nonexistent variable: phase surface
+ResultOutputSolver: -------------------------------------
+SaveResult: Saving results to file: ./case.result
+MAIN: *** Elmer Solver: ALL DONE ***
+MAIN: The end
+SOLVER TOTAL TIME(CPU,REAL):        67.66       67.66
+ELMER SOLVER FINISHED AT: 2023/06/02 09:00:47

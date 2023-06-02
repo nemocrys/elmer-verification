@@ -1,0 +1,11 @@
+Metadata for SaveScalars file: ./scalars.dat
+Elmer version: 9.0
+Elmer revision: Release
+Elmer compilation date: 2023-05-09
+Solver input file: case.sif
+File started at: 2023/06/02 09:00:28
+ 
+Variables in columns of matrix: 
+   1: boundary sum: temperature loads over bc save scalars
+   2: res: eddy current power
+   3: res: electromagnetic field energy

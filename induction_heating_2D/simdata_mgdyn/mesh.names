@@ -1,0 +1,8 @@
+! ----- names for bodies -----
+$ cylinder = 1
+$ cylinder_ends = 2
+$ coil = 3
+$ air = 4
+! ----- names for boundaries -----
+$ cylinder_surf = 5
+$ outside_surfs = 6

@@ -1,0 +1,26 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = cylinder
+End
+
+Body 2
+  Name = cylinder_ends
+End
+
+Body 3
+  Name = coil
+End
+
+Body 4
+  Name = air
+End
+
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = cylinder_surf
+End
+
+Boundary Condition 2
+  Name = outside_surfs
+End
+

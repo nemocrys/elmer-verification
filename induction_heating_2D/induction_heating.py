@@ -3,7 +3,7 @@ import shutil
 import subprocess
 import gmsh
 import pyelmer.elmerkw as elmer
-from pyelmer.gmsh import *
+from objectgmsh import *
 
 
 def geometry(l, n_l, r_e, r_i, d, alpha_mesh=1, with_cylinder=True):

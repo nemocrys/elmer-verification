@@ -1,0 +1,39 @@
+
+Starting program Elmergrid, compiled on May  9 2023
+Elmergrid reading in-line arguments
+Output will be saved to file induction_verification.
+
+Elmergrid loading data:
+-----------------------
+Format chosen using the first line: $MeshFormat
+Gmsh version is 2.2
+Loading mesh in Gmsh format 2.0 from file induction_verification.msh2
+Allocating for 78884 knots and 157724 elements.
+Assuming maximum entity dim to be 2
+Moving bulk elements to boundary elements
+Leading bulk elementtype is 303
+Trailing bulk elementtype is 202
+There are 110 (out of 157724) lower dimensional elements.
+Node 483 belongs to maximum of 9 elements
+Found 42 side elements that have two parents.
+Found correctly 110 side elements.
+Parent elements were reordered up to index 157614.
+Moved 157614 elements (out of 157724) to new positions
+Successfully read the mesh from the Gmsh input file.
+Using physical numbering of entities
+
+Elmergrid creating and manipulating meshes:
+-------------------------------------------
+
+Elmergrid saving data with method 2:
+-------------------------------------
+Saving mesh in ElmerSolver format to directory induction_verification.
+Saving 78884 coordinates to mesh.nodes.
+Saving 157614 element topologies to mesh.elements.
+Saving boundary elements to mesh.boundary.
+Saving header info to mesh.header.
+Saving names info to mesh.names.
+Saving entities info to entities.sif.
+
+Thank you for using Elmergrid!
+Send bug reports and feature wishes to elmeradm@csc.fi
