@@ -2,10 +2,16 @@
 
 2D axisymmetric verification cases for Elmer FEM:
 
-- Induction heating
-- Heat conduction and radiation in concentric spheres
+- [Induction heating](induction_heating_2D)
+- [Heat conduction and radiation in concentric spheres](heat_conduction_radiation_2D)
 
 Both cases are solved numerically and analytically, deviations are <1%.
+
+Additional verification cases (work in progress):
+
+- [Heat conduction and radiation with temperature-dependent emissivity](heat_conduction_radiation-eps-T_2D)
+- [Impedance boundary condition](impedance-boundary-condition)
+- [Lorentz forces](Lorentz_force)
 
 The project is developed and maintained by the [**Model experiments group**](https://www.ikz-berlin.de/en/research/materials-science/section-fundamental-description#c486) at the Leibniz Institute for Crystal Growth (IKZ).
 

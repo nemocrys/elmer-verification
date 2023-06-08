@@ -1,0 +1,42 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = cylinder
+End
+
+Body 2
+  Name = coil_0deg
+End
+
+Body 3
+  Name = coil_60deg
+End
+
+Body 4
+  Name = coil_120deg
+End
+
+Body 5
+  Name = coil_180deg
+End
+
+Body 6
+  Name = coil_240deg
+End
+
+Body 7
+  Name = coil_300deg
+End
+
+Body 8
+  Name = surrounding
+End
+
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = outside
+End
+
+Boundary Condition 2
+  Name = cylinder_surface
+End
+

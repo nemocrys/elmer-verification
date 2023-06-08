@@ -1,0 +1,75 @@
+
+Starting program Elmergrid, compiled on May 23 2023
+Elmergrid reading in-line arguments
+Output will be saved to file case.
+
+Elmergrid loading data:
+-----------------------
+Format chosen using the first line: $MeshFormat
+Gmsh version is 4.1
+Loading mesh in Gmsh format 4.1 from file case.msh
+Reading 32 entities in 0D
+Reading 33 entities in 1D
+Reading 8 entities in 2D
+Allocating for 18194 knots and 36306 elements.
+Leading element dimension is 2
+BC name for physical group 9 is: outside
+BC name for physical group 10 is: cylinder_surface
+Body name for physical group 1 is: cylinder
+Body name for physical group 2 is: coil_0deg
+Body name for physical group 3 is: coil_60deg
+Body name for physical group 4 is: coil_120deg
+Body name for physical group 5 is: coil_180deg
+Body name for physical group 6 is: coil_240deg
+Body name for physical group 7 is: coil_300deg
+Body name for physical group 8 is: surrounding
+Allocating lookup table for tags of size 33
+Defined 32 0DIM entities with geometric tag range [1 32]
+Defined 33 1DIM entities with geometric tag range [1 33]
+   Physical given tag range is [9 10]
+Defined 8 2DIM entities with geometric tag range [1 8]
+   Physical given tag range is [1 8]
+Physical tag offset for 0D is 10
+Geometric tag offset for 0D is 43
+Reading 18194 nodes in 73 blocks.
+Reading 36306 elements in 12 blocks.
+Mapping mesh tag 2 to physical tag 10 in 1DIM
+Mapping mesh tag 31 to physical tag 9 in 1DIM
+Mapping mesh tag 32 to physical tag 9 in 1DIM
+Mapping mesh tag 33 to physical tag 9 in 1DIM
+Mapping mesh tag 1 to physical tag 1 in 2DIM
+Mapping mesh tag 2 to physical tag 2 in 2DIM
+Mapping mesh tag 3 to physical tag 3 in 2DIM
+Mapping mesh tag 4 to physical tag 4 in 2DIM
+Mapping mesh tag 5 to physical tag 5 in 2DIM
+Mapping mesh tag 6 to physical tag 6 in 2DIM
+Mapping mesh tag 7 to physical tag 7 in 2DIM
+Mapping mesh tag 8 to physical tag 8 in 2DIM
+Moving bulk elements to boundary elements
+Assuming that boundaries names are already Ok!
+Leading bulk elementtype is 303
+Trailing bulk elementtype is 202
+There are 97 (out of 36306) lower dimensional elements.
+Node 65 belongs to maximum of 9 elements
+Found 80 side elements that have two parents.
+Found correctly 97 side elements.
+Parent elements were reordered up to index 36209.
+Moved 36209 elements (out of 36306) to new positions
+Successfully read the mesh from the Gmsh input file.
+Using physical numbering of entities
+
+Elmergrid creating and manipulating meshes:
+-------------------------------------------
+
+Elmergrid saving data with method 2:
+-------------------------------------
+Saving mesh in ElmerSolver format to directory case.
+Saving 18194 coordinates to mesh.nodes.
+Saving 36209 element topologies to mesh.elements.
+Saving boundary elements to mesh.boundary.
+Saving header info to mesh.header.
+Saving names info to mesh.names.
+Saving entities info to entities.sif.
+
+Thank you for using Elmergrid!
+Send bug reports and feature wishes to elmeradm@csc.fi

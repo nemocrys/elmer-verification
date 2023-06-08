@@ -1,0 +1,201 @@
+ELMER SOLVER (v 9.0) STARTED AT: 2023/06/06 19:11:19
+ParCommInit:  Initialize #PEs:            1
+MAIN: OMP_NUM_THREADS not set. Using only 1 thread per task.
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 9.0 (Rev: c37d48654, Compiled: 2023-05-23)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  MUMPS library linked in.
+MAIN:  Lua interpreter linked in.
+MAIN: =============================================================
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Scanning only size info
+LoadInputFile: First time visiting
+LoadInputFile: Reading base load of sif file
+LoadInputFile: Loading input file: case.sif
+LoadInputFile: Reading base load of sif file
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 1]
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 2]
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 3]
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 4]
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 5]
+CheckKeyword:  Unlisted keyword: [current density im] in section: [body force 6]
+LoadInputFile: Number of BCs: 1
+LoadInputFile: Number of Body Forces: 6
+LoadInputFile: Number of Initial Conditions: 0
+LoadInputFile: Number of Materials: 2
+LoadInputFile: Number of Equations: 1
+LoadInputFile: Number of Solvers: 3
+LoadInputFile: Number of Bodies: 8
+ListTagKeywords: Setting weight for keywords!
+ListTagKeywords: No parameters width suffix: normalize by area
+ListTagKeywords: Setting weight for keywords!
+ListTagKeywords: No parameters width suffix: normalize by volume
+ElmerAsciiMesh: Base mesh name: ./.
+MAIN: -------------------------------------
+OptimizeBandwidth: Initial bandwidth for mgdyn2dharmonic: 18167
+OptimizeBandwidth: Optimized bandwidth for mgdyn2dharmonic: 492
+OptimizeBandwidth: Initial bandwidth for calcfields: 18167
+OptimizeBandwidth: Optimized bandwidth for calcfields: 492
+MAIN: Number of timesteps to be saved: 10
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+MagnetoDynamics2DHarmonic: Solving equation for magnetic vector potential
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+      10 0.9384E-01
+      20 0.2204E-01
+      30 0.8238E-02
+      40 0.1967E-02
+      50 0.9538E-03
+      60 0.2665E-03
+      70 0.5956E-04
+      80 0.3282E-05
+      90 0.1864E-06
+      93 0.5859E-07
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.17272215E-03  2.0000000     ) :: mgdyn2dharmonic
+      10 0.2815E-01
+      20 0.6611E-02
+      30 0.2471E-02
+      40 0.9936E-03
+      50 0.2515E-03
+      60 0.1056E-03
+      70 0.2947E-04
+      80 0.1556E-05
+      90 0.1985E-06
+      92 0.9064E-07
+ComputeChange: NS (ITER=2) (NRM,RELC): ( 0.22453882E-03 0.26086965     ) :: mgdyn2dharmonic
+      10 0.8445E-02
+      20 0.1983E-02
+      30 0.7418E-03
+      40 0.1940E-03
+      50 0.6117E-04
+      60 0.3215E-04
+      70 0.2946E-05
+      80 0.1584E-06
+      84 0.9326E-07
+ComputeChange: NS (ITER=3) (NRM,RELC): ( 0.24008379E-03 0.66914430E-01 ) :: mgdyn2dharmonic
+      10 0.2534E-02
+      20 0.5950E-03
+      30 0.2225E-03
+      40 0.6310E-04
+      50 0.2442E-04
+      60 0.1167E-04
+      70 0.1696E-05
+      77 0.7585E-07
+ComputeChange: NS (ITER=4) (NRM,RELC): ( 0.24474732E-03 0.19237739E-01 ) :: mgdyn2dharmonic
+      10 0.7601E-03
+      20 0.1785E-03
+      30 0.6675E-04
+      40 0.2168E-04
+      50 0.7856E-05
+      60 0.2920E-05
+      70 0.8117E-06
+      78 0.2115E-07
+ComputeChange: NS (ITER=5) (NRM,RELC): ( 0.24614636E-03 0.56999735E-02 ) :: mgdyn2dharmonic
+      10 0.2280E-03
+      20 0.5355E-04
+      30 0.2002E-04
+      40 0.5088E-05
+      50 0.2076E-05
+      60 0.6231E-06
+      70 0.1748E-06
+      76 0.2846E-07
+ComputeChange: NS (ITER=6) (NRM,RELC): ( 0.24656608E-03 0.17037161E-02 ) :: mgdyn2dharmonic
+      10 0.6841E-04
+      20 0.1606E-04
+      30 0.6009E-05
+      40 0.1826E-05
+      50 0.6632E-06
+      60 0.3226E-06
+      68 0.6823E-07
+ComputeChange: NS (ITER=7) (NRM,RELC): ( 0.24669198E-03 0.51047602E-03 ) :: mgdyn2dharmonic
+      10 0.2052E-04
+      20 0.4820E-05
+      30 0.1806E-05
+      40 0.5646E-06
+      50 0.2000E-06
+      54 0.9427E-07
+ComputeChange: NS (ITER=8) (NRM,RELC): ( 0.24672974E-03 0.15304389E-03 ) :: mgdyn2dharmonic
+      10 0.6160E-05
+      20 0.1463E-05
+      30 0.5803E-06
+      40 0.1404E-06
+      46 0.6233E-07
+ComputeChange: NS (ITER=9) (NRM,RELC): ( 0.24674108E-03 0.45953310E-04 ) :: mgdyn2dharmonic
+      10 0.1849E-05
+      20 0.4421E-06
+      30 0.1792E-06
+      38 0.7489E-07
+ComputeChange: NS (ITER=10) (NRM,RELC): ( 0.24674448E-03 0.13810232E-04 ) :: mgdyn2dharmonic
+      10 0.5550E-06
+      20 0.1366E-06
+      24 0.9642E-07
+ComputeChange: NS (ITER=11) (NRM,RELC): ( 0.24674547E-03 0.39949885E-05 ) :: mgdyn2dharmonic
+ComputeChange: SS (ITER=1) (NRM,RELC): ( 0.24674547E-03  2.0000000     ) :: mgdyn2dharmonic
+WARNING:: GetPermittivity: Permittivity not defined in material, defaulting to that of vacuum
+MagnetoDynamicsCalcFields: Eddy current power:    2.243722E+00
+MagnetoDynamicsCalcFields: ElectroMagnetic Field Energy:    5.067656E-01
+ComputeChange: SS (ITER=1) (NRM,RELC): (  0.0000000      0.0000000     ) :: calcfields
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving with prefix: Case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+SaveResult: Saving results to file: ./case.result
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            2
+MAIN: -------------------------------------
+MAIN: 
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+MagnetoDynamics2DHarmonic: Solving equation for magnetic vector potential
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+      10 0.1809E-06
+      14 0.8979E-07
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.24674575E-03 0.11502032E-05 ) :: mgdyn2dharmonic
+ComputeChange: SS (ITER=2) (NRM,RELC): ( 0.24674575E-03 0.11502032E-05 ) :: mgdyn2dharmonic
+MagnetoDynamicsCalcFields: Eddy current power:    2.243720E+00
+MagnetoDynamicsCalcFields: ElectroMagnetic Field Energy:    5.067668E-01
+ComputeChange: SS (ITER=2) (NRM,RELC): (  0.0000000      0.0000000     ) :: calcfields
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+SaveResult: Saving results to file: ./case.result
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            3
+MAIN: -------------------------------------
+MAIN: 
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+MagnetoDynamics2DHarmonic: Solving equation for magnetic vector potential
+MagnetoDynamics2DHarmonic: ------------------------------------------------
+       5 0.9792E-07
+ComputeChange: NS (ITER=1) (NRM,RELC): ( 0.24674577E-03 0.81220801E-07 ) :: mgdyn2dharmonic
+ComputeChange: SS (ITER=3) (NRM,RELC): ( 0.24674577E-03 0.81220801E-07 ) :: mgdyn2dharmonic
+MagnetoDynamicsCalcFields: Eddy current power:    2.243721E+00
+MagnetoDynamicsCalcFields: ElectroMagnetic Field Energy:    5.067670E-01
+ComputeChange: SS (ITER=3) (NRM,RELC): (  0.0000000      0.0000000     ) :: calcfields
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+SaveResult: Saving results to file: ./case.result
+MAIN: *** Elmer Solver: ALL DONE ***
+MAIN: The end
+SOLVER TOTAL TIME(CPU,REAL):        18.11       43.12
+ELMER SOLVER FINISHED AT: 2023/06/06 19:12:03

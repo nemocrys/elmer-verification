@@ -1,0 +1,12 @@
+! ----- names for bodies -----
+$ cylinder = 1
+$ coil_0deg = 2
+$ coil_60deg = 3
+$ coil_120deg = 4
+$ coil_180deg = 5
+$ coil_240deg = 6
+$ coil_300deg = 7
+$ surrounding = 8
+! ----- names for boundaries -----
+$ outside = 9
+$ cylinder_surface = 10
