@@ -6,3 +6,4 @@
 heat_conduction_radiation-eps-T_2D/simdata/entities.sif
 heat_conduction_radiation-eps-T_2D/simdata/mesh.*
 heat_conduction_radiation-eps-T_2D/simdata/ViewFactors.dat
+induction_heating_2D_v2/simdata*

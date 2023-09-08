@@ -1,0 +1,131 @@
+# geometry
+height: 0.05  # height of the domain # l
+graphite_r: 0.06  # radius of graphite cylinder # r_cyl
+coil_r_i: 0.07  # inner radius of coil # r_i
+coil_d: 0.01  # coil winding diameter
+air_size_factor: 10  # times (coil_r_i + coil_d)
+mesh_size_factor: 1  # global refinement / coarsening
+
+# boundary conditions
+T_amb: 300
+htc_graphite: 10
+frequency: 13.5e+3  # HZ
+current: 300 # 3 windings with 100 a in experiment
+
+# Materials
+graphite:
+  Density: 1730.0  # kg/m^3
+  Electric Conductivity: 5.88e+4  # S / m´
+  Heat Conductivity: 65  # W/(m K)
+  Emissivity: 0.7
+insulator:
+  Density: 1
+  Electric Conductivity: 0
+  Heat Conductivity: 0
+
+
+# Elmer Simulation, Solvers
+axi-symmetric_steady:
+  Max Output Level: 4
+  Coordinate System: Axi Symmetric
+  Simulation Type: Steady state
+  Steady State Max Iterations: 1
+  Output File: case.result
+
+StatMagSolver:
+  Equation: StatMagSolver
+  Procedure: '"StatMagSolve" "StatMagSolver"'
+  Variable: Potential[Potential Re:1 Potential Im:1]
+  Variable DOFs: 2
+  Calculate Joule Heating: Logical True
+  Calculate Magnetic Flux: Logical True
+  Nonlinear System Convergence Tolerance: 1e-05
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1e-06
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative
+  Linear System Iterative Method: Idrs
+  Linear System Max Iterations: 10000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1e-09
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 1
+
+MagnetoDynamics2DHarmonic:
+  Equation: MgDyn2DHarmonic
+  Procedure: '"MagnetoDynamics2D" "MagnetoDynamics2DHarmonic"'
+  Variable: 'Potential[Potential Re:1 Potential Im:1]'
+  Variable Dofs: 2
+  Exec Solver: Always
+  Nonlinear System Convergence Tolerance: 1.0e-5
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1.0e-6
+  Stabilize: True
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative  
+  Linear System Iterative Method: BiCGStab
+  Linear System Max Iterations: 1000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1.0e-7
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 10
+
+MagnetoDynamicsCalcFields:
+  Equation: CalcFields
+  Procedure: '"MagnetoDynamics" "MagnetoDynamicsCalcFields"'
+  Potential Variable: Potential
+  Calculate Joule Heating: True
+  Calculate Magnetic Field Strength: True
+  Calculate Electric Field: True
+  Calculate Current Density: True
+  Calculate JxB: Logical True  
+  Exec Solver: Always
+  Calculate Nodal Fields: Logical False
+  Calculate Elemental Fields: Logical True
+  Linear System Residual Output: 10
+
+HeatSolver:
+  Equation: Heat Equation
+  Procedure: '"HeatSolve" "HeatSolver"'
+  Variable: '"Temperature"'
+  Variable Dofs: 1
+  Calculate Loads: True
+  Exec Solver: Always
+  Nonlinear System Convergence Tolerance: 1.0e-6
+  Nonlinear System Max Iterations: 1000
+  Nonlinear System Relaxation Factor: 0.7
+  Steady State Convergence Tolerance: 1.0e-6
+  Stabilize: True
+  Optimize Bandwidth: True
+  Linear System Solver: Iterative  
+  Linear System Iterative Method: BiCGStab
+  Linear System Max Iterations: 1000
+  Linear System Preconditioning: ILU
+  Linear System Precondition Recompute: 1
+  Linear System Convergence Tolerance: 1.0e-8
+  Linear System Abort Not Converged: True
+  Linear System Residual Output: 1
+  Smart Heater Control After Tolerance: 1.0e-4
+
+ResultOutputSolver:
+  Exec Solver: 'After timestep'
+  Equation: ResultOutputSolver
+  Procedure: '"ResultOutputSolve" "ResultOutputSolver"'
+  Discontinuous Bodies: True
+  VTU Format: True
+  VTU Part Collection: True
+  Save Geometry Ids: 'Logical True'
+
+SaveLine:
+  Exec Solver: 'After timestep'
+  Equation: '"SaveLine"'
+  Procedure: '"SaveData" "SaveLine"'
+  Filename: '"save_line.dat"'
+  Output Directory: './results'
+  Polyline Coordinates(2,2): 0.0 0.0 0.06 0.0
+  Polyline Divisions(1): 1000
+
