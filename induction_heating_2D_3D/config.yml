@@ -32,6 +32,29 @@ axi-symmetric_steady:
   Steady State Max Iterations: 1
   Output File: case.result
 
+3D_steady:
+  Max Output Level: 4
+  Coordinate System: Cartesian
+  Simulation Type: Steady
+  Steady State Max Iterations: 1
+
+CoilSolver:
+  Exec Solver: Before All
+  Equation: CoilSolver
+  Procedure: '"CoilSolver" "CoilSolver"'
+  Linear System Solver: Iterative
+  Linear System Direct Method: Umfpack
+  Linear System Preconditioning: ILU1
+  Linear System Max Iterations: 2000
+  Linear System Iterative Method: idrs
+  Linear System Convergence Tolerance: 1e-9
+  Linear System Residual Output: 20
+  Coil Closed: Logical True
+  Calculate Elemental Fields: True
+  Fix Input Current Density: True
+  Normalize Coil Current: True
+  Desired Coil Current: 100.0
+
 StatMagSolver:
   Equation: StatMagSolver
   Procedure: '"StatMagSolve" "StatMagSolver"'
@@ -73,6 +96,20 @@ MagnetoDynamics2DHarmonic:
   Linear System Convergence Tolerance: 1.0e-7
   Linear System Abort Not Converged: True
   Linear System Residual Output: 10
+
+MGDynamics:
+  Equation: MGDynamics
+  Variable: AV[AV re:1 AV im:1]
+  Procedure: '"MagnetoDynamics" "WhitneyAVHarmonicSolver"'
+  Linear System Solver: Iterative
+  Linear System Preconditioning: ILU
+  Linear System Residual Output: 10
+  Linear System Max Iterations: 10000
+  Linear System Iterative Method: BiCGStabl
+  Linear System Convergence Tolerance: 1e-06
+  Linear System Robust: True
+  Linear System Abort Not Converged: False
+  BicgStabl Polynomial Degree: 8
 
 MagnetoDynamicsCalcFields:
   Equation: CalcFields
