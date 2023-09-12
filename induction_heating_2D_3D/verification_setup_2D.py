@@ -8,13 +8,13 @@ from pyelmer.execute import run_elmer_grid, run_elmer_solver
 from pyelmer.post import scan_logfile
 
 
-config_file = "induction_heating_2D_v2/config.yml"
+config_file = "induction_heating_2D_3D/config.yml"
 use_statmag = True
 
 with open(config_file) as f:
     config = yaml.safe_load(f)
 
-wdir = f"induction_heating_2D_v2/simdata_air-size={config['air_size_factor']*(config['coil_d']+config['coil_r_i'])}_mesh-size={config['mesh_size_factor']}"
+wdir = f"induction_heating_2D_3D/simdata_2D_air-size={config['air_size_factor']*(config['coil_d']+config['coil_r_i'])}_mesh-size={config['mesh_size_factor']}"
 if not os.path.exists(wdir):
     os.makedirs(wdir)
 
