@@ -17,6 +17,7 @@ mesh_size = 0.01
 size_factor = 1
 ##########
 
+simdir = f"./simdata_sf-{size_factor}"
 
 model = Model()
 
@@ -57,9 +58,9 @@ insulation.mesh_size = mesh_size
 model.deactivate_characteristic_length()
 model.set_const_mesh_sizes()
 model.generate_mesh(3, size_factor=size_factor, optimize="Netgen")
-if not os.path.exists("./simdata"):
-    os.mkdir("./simdata")
-model.write_msh("./simdata/case.msh")
+if not os.path.exists(simdir):
+    os.mkdir(simdir)
+model.write_msh(f"{simdir}/case.msh")
 
 
 
@@ -117,12 +118,12 @@ bnd_insulation_out = elmer.Boundary(sim, "insulation_out", [insulation_outside.p
 bnd_insulation_out.radiation_idealized = True
 bnd_insulation_out.T_ext = 300
 
-sim.write_sif("./simdata")
+sim.write_sif(simdir)
 
-run_elmer_grid("./simdata", "case.msh")
-run_elmer_solver("./simdata")
+run_elmer_grid(simdir, "case.msh")
+run_elmer_solver(simdir)
 
-warn, err, stats = scan_logfile("./simdata")
+warn, err, stats = scan_logfile(simdir)
 print("Warnings:", warn)
 print("Errors:", err)
 print("Statistics:", stats)

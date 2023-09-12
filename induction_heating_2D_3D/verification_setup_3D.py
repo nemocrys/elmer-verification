@@ -71,7 +71,7 @@ solver_res = elmer.load_solver("ResultOutputSolver", sim, config_file)
 solver_save_line = elmer.load_solver("SaveLine", sim, config_file)
 
 eqn_main = elmer.Equation(sim, "eqn_main", [solver_mgdyn, solver_mgdyncalc, solver_heat])
-eqn_coil = elmer.Equation(sim, "eqn_main", [solver_coil, solver_mgdyn, solver_mgdyncalc, solver_heat])
+eqn_coil = elmer.Equation(sim, "eqn_coil", [solver_coil, solver_mgdyn, solver_mgdyncalc, solver_heat])
 
 graphite = elmer.load_material("graphite", sim, config_file)
 insulator = elmer.load_material("insulator", sim, config_file)

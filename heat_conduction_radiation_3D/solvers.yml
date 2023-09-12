@@ -20,6 +20,7 @@ HeatSolver:
   Linear System Abort Not Converged: True
   Linear System Residual Output: 1
   Smart Heater Control After Tolerance: 1.0e-4
+  Gebhardt Factors Solver Iterative: True
 
 ResultOutputSolver:
   Exec Solver: 'After timestep'

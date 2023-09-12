@@ -2,6 +2,7 @@
 *.result
 *.vtu
 *.pvd
+*.log
 **.ipynb_checkpoints/
 heat_conduction_radiation-eps-T_2D/simdata/entities.sif
 heat_conduction_radiation-eps-T_2D/simdata/mesh.*

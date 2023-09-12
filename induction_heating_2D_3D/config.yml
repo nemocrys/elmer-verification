@@ -18,10 +18,14 @@ graphite:
   Electric Conductivity: 5.88e+4  # S / m´
   Heat Conductivity: 65  # W/(m K)
   Emissivity: 0.7
+  Relative Permeability: 1
+  Relative Permittivity: 1
 insulator:
   Density: 1
   Electric Conductivity: 0
   Heat Conductivity: 0
+  Relative Permeability: 1
+  Relative Permittivity: 1
 
 
 # Elmer Simulation, Solvers
