@@ -1,5 +1,7 @@
 # elmer-verification
 
+[![DOI](https://zenodo.org/badge/390617816.svg)](https://doi.org/10.5281/zenodo.13890393)
+
 2D axisymmetric verification cases for Elmer FEM:
 
 - [Induction heating](induction_heating_2D)
